@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4987" started-at="2019-03-10T00:29:06Z" finished-at="2019-03-10T00:29:11Z">
+  <suite name="Suite" duration-ms="4566" started-at="2019-03-10T01:09:18Z" finished-at="2019-03-10T01:09:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4987" started-at="2019-03-10T00:29:06Z" finished-at="2019-03-10T00:29:11Z">
+    <test name="Test" duration-ms="4566" started-at="2019-03-10T01:09:18Z" finished-at="2019-03-10T01:09:23Z">
       <class name="selanium.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selanium.NewTest@687080dc]" name="beforeTest" is-config="true" duration-ms="1771" started-at="2019-03-10T00:29:06Z" finished-at="2019-03-10T00:29:08Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selanium.NewTest@687080dc]" name="beforeTest" is-config="true" duration-ms="1666" started-at="2019-03-10T01:09:18Z" finished-at="2019-03-10T01:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:selanium.NewTest@687080dc]" name="f" duration-ms="2662" started-at="2019-03-10T00:29:08Z" finished-at="2019-03-10T00:29:10Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:selanium.NewTest@687080dc]" name="f" duration-ms="2735" started-at="2019-03-10T01:09:20Z" finished-at="2019-03-10T01:09:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selanium.NewTest@687080dc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-10T00:29:08Z" finished-at="2019-03-10T00:29:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selanium.NewTest@687080dc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-10T01:09:20Z" finished-at="2019-03-10T01:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selanium.NewTest@687080dc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-10T00:29:10Z" finished-at="2019-03-10T00:29:10Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selanium.NewTest@687080dc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-10T01:09:23Z" finished-at="2019-03-10T01:09:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selanium.NewTest@687080dc]" name="afterTest" is-config="true" duration-ms="534" started-at="2019-03-10T00:29:10Z" finished-at="2019-03-10T00:29:11Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selanium.NewTest@687080dc]" name="afterTest" is-config="true" duration-ms="149" started-at="2019-03-10T01:09:23Z" finished-at="2019-03-10T01:09:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- selanium.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
