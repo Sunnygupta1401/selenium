@@ -4,16 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="selanium.NewTest"/>
-           
-      
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="Testjunit" junit="true">
-    <classes>
-      
-            <class name="selanium.LibraryTest"/>
-      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
