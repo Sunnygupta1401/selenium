@@ -47,7 +47,7 @@ public class NewTest {
   @BeforeTest
   public void beforeTest()
   {
-	  System.setProperty("webdriver.chrome.driver", "/Users/sunnygupta/Downloads/chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "/Users/Shared/Jenkins/Home/tools");
 		 driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
