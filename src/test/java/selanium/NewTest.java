@@ -18,15 +18,32 @@ public class NewTest {
 	
 	WebDriver driver;
   @Test
-  public void f() {
+  public void loadSite() {
 	  
 	  
 	  try {
 			// TODO Auto-generated method stub
-			driver.get("https://www.amazon.com/");
+			driver.get("http://localhost:8090/webapp/");
 
 		// driver.findElement(By.className("NKcBbdsdsdd")).click();
-			
+		  
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			Assert.fail();
+		}
+	  
+  }
+  
+  @Test
+  public void validateTitle() {
+	  
+	  
+	  try {
+
+		// driver.findElement(By.className("NKcBbdsdsdd")).click();
+			String title= driver.getTitle();
+			Assert.assertEquals("test", title);
 		  
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
