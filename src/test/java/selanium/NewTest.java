@@ -25,7 +25,7 @@ public class NewTest {
 			// TODO Auto-generated method stub
 			driver.get("https://www.amazon.com/");
 
-		 driver.findElement(By.className("NKcBbdsdsdd")).click();
+		// driver.findElement(By.className("NKcBbdsdsdd")).click();
 			
 		  
 		} catch (Exception e) {
