@@ -41,6 +41,7 @@ dependencies {
 
     testCompile group: 'org.testng', name: 'testng', version:'6.14.3'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
+    runtime group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
 
 
     // Use JUnit test framework
@@ -72,9 +73,12 @@ mainClassName = 'selanium.Library'
 
 jar {
   manifest {
-    attributes(
-      'Main-Class': 'selanium.Library'
-    )
+    attributes 'Main-Class': 'selanium.Library',
+    'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' '),
+                'Implementation-Version': project.version
+    
   }
+      from(configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }) {}
+  
 }
 
