@@ -31,4 +31,16 @@ System.setProperty("webdriver.chrome.driver", "/Users/sunnygupta/Downloads/chrom
     	
         return true;
     }
+    
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+    	Library objLib = new Library();
+    	objLib.someLibraryMethod();
+    	
+    	
+    	
+    }
+    
+    
 }
