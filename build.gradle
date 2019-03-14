@@ -53,8 +53,13 @@ jacoco {
         classDumpDir = file("$buildDir/jacoco/classpathdumps")
     }
 
-    useTestNG() {
-        // runlist to executed. path is relative to current folder
-        suites 'testng.xml'
-    }
+  
+}
+
+
+task smokeTests(type: Test) { // we define a task with name ‘smokeTests’
+   useTestNG() {
+       useDefaultListeners = true
+       suites 'testng.xml'
+   }
 }

@@ -5,14 +5,18 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import static org.junit.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.AssertJUnit;
 
 public class NewTest {
 	
@@ -52,6 +56,15 @@ public class NewTest {
 		}
 	  
   }
+  
+  @Test public void testSomeLibraryMethod() {
+  	System.out.println("test");
+      Library classUnderTest = new Library();
+      //Assert.assertTrue(classUnderTest.someLibraryMethod());
+      
+      AssertJUnit.assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+  }
+  
   @BeforeMethod
   public void beforeMethod() {
   }
@@ -65,7 +78,12 @@ public class NewTest {
   public void beforeTest()
   {
 	  System.setProperty("webdriver.chrome.driver", "/Users/Shared/Jenkins/Home/tools/chromedriver");
-		 driver = new ChromeDriver();
+		 
+	  ChromeOptions chromeOptions = new ChromeOptions();
+	   chromeOptions.addArguments("--headless");
+	  driver = new ChromeDriver(chromeOptions);
+		 
+		 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
